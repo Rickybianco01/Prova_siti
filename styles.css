@@ -1,13 +1,14 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #005f73;
     color: #fff;
     padding: 1rem;
     position: fixed;
@@ -41,6 +42,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     color: #fff;
+    background-color: rgba(0, 95, 115, 0.7);
 }
 
 .hero-content {
@@ -49,15 +51,22 @@ nav ul li a {
 
 button {
     padding: 1rem 2rem;
-    background-color: #ff6347;
+    background-color: #0a9396;
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #94d2bd;
 }
 
 .about, .gallery, .contact {
     padding: 2rem;
     text-align: center;
+    background-color: #e0fbfc;
 }
 
 .image-grid {
@@ -66,8 +75,14 @@ button {
     gap: 1rem;
 }
 
+.image-grid img {
+    width: 100%;
+    border: 5px solid #0a9396;
+    border-radius: 10px;
+}
+
 footer {
-    background-color: #333;
+    background-color: #005f73;
     color: #fff;
     text-align: center;
     padding: 1rem;
